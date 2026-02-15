@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rossaryoildrill Corporation</title>
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#f4f6f9; }
+header { background:#0b1f3a; color:white; padding:20px 50px; display:flex; justify-content:space-between; align-items:center; }
+header h1 { margin:0; font-size:22px; }
+nav a { color:white; margin-left:20px; text-decoration:none; font-weight:bold; }
+.hero { background:linear-gradient(to right,#0b1f3a,#1d4e89); color:white; padding:100px 20px; text-align:center; }
+.hero h2 { font-size:40px; margin-bottom:10px; }
+.section { padding:60px 20px; max-width:1100px; margin:auto; }
+.section h2 { color:#0b1f3a; margin-bottom:20px; }
+.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+.card { background:white; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+.card h3 { margin-top:0; }
+button { background:#1d4e89; color:white; border:none; padding:12px 18px; cursor:pointer; border-radius:4px; font-weight:bold; }
+button:hover { background:#163d6b; }
+footer { background:#0b1f3a; color:white; text-align:center; padding:20px; }
+input, textarea { width:100%; padding:12px; margin:10px 0; border-radius:4px; border:1px solid #ccc; }
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Rossaryoildrill Corporation</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#certifications">Certifications</a>
+<a href="#rfq">Request Quote</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Global Energy Equipment Manufacturer Since 2008</h2>
+<p>Manufacturing High-Performance Oil & Gas Drilling Systems From Houston, Texas, USA</p>
+</section>
+
+<section class="section" id="about">
+<h2>About Us</h2>
+<p>Founded in 2008, Rossaryoildrill Corporation is a Houston-based manufacturer of advanced oil rig drilling systems. Our state-of-the-art manufacturing facility in Houston, Texas, produces land and offshore drilling equipment engineered for durability, safety, and performance.</p>
+<p>We serve energy operators across North America, Africa, the Middle East, and Asia with industrial-grade drilling solutions built to meet international standards.</p>
+</section>
+
+<section class="section" id="products">
+<h2>Our Products</h2>
+<div class="products">
+
+<div class="card">
+<h3>Hydraulic Land Drilling Rig X1200</h3>
+<p><strong>Depth Capacity:</strong> 12,000 ft</p>
+<p><strong>Power Rating:</strong> 1,200 HP</p>
+<p><strong>Automation:</strong> Integrated Digital Control System</p>
+<button onclick="scrollToRFQ()">Request Quote</button>
+</div>
+
+<div class="card">
+<h3>Offshore Modular Drilling System 900</h3>
+<p><strong>Depth Capacity:</strong> 15,000 ft</p>
+<p><strong>Power Rating:</strong> 1,800 HP</p>
+<p><strong>Compliance:</strong> Offshore Safety Standard</p>
+<button onclick="scrollToRFQ()">Request Quote</button>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="certifications">
+<h2>Certifications & Compliance</h2>
+<p>Rossaryoildrill Corporation operates under strict quality and safety standards.</p>
+<ul>
+<li>API Compliant Manufacturing Standards</li>
+<li>ISO Quality Management Certification</li>
+<li>Industrial Safety & Environmental Compliance</li>
+</ul>
+</section>
+
+<section class="section" id="rfq">
+<h2>Request For Quotation (RFQ)</h2>
+<p>All equipment is sold under EXW Houston, Texas. Shipping is arranged by the buyer.</p>
+<p><strong>Payment Terms:</strong> 40% advance via bank wire transfer. 60% prior to delivery.</p>
+
+<form>
+<input type="text" placeholder="Company Name" required>
+<input type="text" placeholder="Project Location" required>
+<input type="email" placeholder="Corporate Email" required>
+<textarea placeholder="Project Requirements (Depth, Timeline, Specifications)" rows="5"></textarea>
+<button type="submit">Submit RFQ</button>
+</form>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Information</h2>
+<p><strong>Headquarters:</strong> Houston, Texas, USA</p>
+<p><strong>Email:</strong> sales@rossaryoildrill.com</p>
+<p><strong>Phone:</strong> +1 (XXX) XXX-XXXX</p>
+</section>
+
+<footer>
+<p>© 2026 Rossaryoildrill Corporation. All Rights Reserved.</p>
+</footer>
+
+<script>
+function scrollToRFQ() {
+document.getElementById("rfq").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
